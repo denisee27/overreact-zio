@@ -133,7 +133,7 @@ function User() {
           {isEditing && (
             <button
               type="button"
-              onClick={() => (setIsEditing(false), setformData({ title: "", body: "" }))}
+              onClick={() => { setIsEditing(false); setformData({ title: "", body: "" }); }}
               style={{
                 padding: "8px 15px",
                 backgroundColor: "#F7931a",

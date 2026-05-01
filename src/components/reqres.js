@@ -7,7 +7,6 @@ import { Button, Modal } from "react-bootstrap";
 function Reqres() {
   const [createShow, setcreateShow] = useState(false);
   const [data, setData] = useState([]);
-  const [isEditing, setIsEditing] = useState(false);
   const { get, post } = useHttpService();
   const reqres = async () => {
     const result = await get("users");
@@ -20,25 +19,13 @@ function Reqres() {
   const reqPost = async (e) => {
     e.preventDefault();
     const response = await post("users", formData);
-     console.log(response);
-  
+    console.log(response);
+
     setcreateShow(false);
     setData([formData, ...data]);
     console.log(response);
   };
-  const reqPut = async (e) => {
-    e.preventDefault();
-    const response = await axios.put("https://reqres.in/api/users/${id}", formData, {
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": "reqres-free-v1",
-      },
-    });
-    setData([response.data, ...data]);
-    console.log(response);
-  };
   const reqSetdata = async (data) => {
-    setIsEditing(true);
     setformData({
       first_name: data.first_name,
       last_name: data.last_name,
@@ -61,7 +48,8 @@ function Reqres() {
     email: "",
   });
   useEffect(() => {
-     reqres();
+    reqres();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
@@ -69,7 +57,7 @@ function Reqres() {
       <button class="btn btn-danger" onClick={() => setcreateShow(true)}>
         Buat data disini!!
       </button>
-      <br/>
+      <br />
       {data.map((item) => (
         <>
           <button type="button" onClick={() => reqDelete(item.id)}>

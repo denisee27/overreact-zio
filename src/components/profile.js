@@ -15,7 +15,7 @@ function Profile() {
       <div style={{ backgroundColor: "#101f26" }}>
         <div>
           <div>
-            <img className="blur w-100" src="/profil.jpg" />
+            <img className="blur w-100" src="/profil.jpg" alt="" />
           </div>
           <div className="container my-5 position-absolute mb-5 mb-lg-0 mb-md-0 start-0 end-0 " style={{ top: "30%" }}>
             <div className="text-center border rounded-5 p-4  text-white mx-5" style={{ opacity: 0.6, backgroundColor: "#0b3835" }}>
@@ -57,7 +57,7 @@ function Profile() {
               </div>
               <div className="col-12   col-md-6 col-lg-6 text-center">
                 <div className="h-100 position-relative w-100  d-flex justify-content-center ">
-                  <img src="/omjoko.jpeg" className="w-75 rounded rounded-5" />
+                  <img src="/omjoko.jpeg" alt="" className="w-75 rounded rounded-5" />
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ function Profile() {
           <div className="text-center col-12 col-md-3 col-lg-3">
             <div className="mx-5">
               <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900  ">
-                <img src="/javascript.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                <img src="/javascript.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                 <h5>Java Script</h5>
               </BackgroundGradient>
             </div>
@@ -75,7 +75,7 @@ function Profile() {
           <div className="text-center col-12 col-md-3 col-lg-3 ">
             <div className="mx-5">
               <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900 container ">
-                <img src="/laraveel.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                <img src="/laraveel.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                 <h5>Laravel</h5>
               </BackgroundGradient>
             </div>
@@ -83,7 +83,7 @@ function Profile() {
           <div className="text-center col-12 col-md-3 col-lg-3">
             <div className="mx-5">
               <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900 container ">
-                <img src="/okk.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                <img src="/okk.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                 <h5>Tailwind</h5>
               </BackgroundGradient>
             </div>
@@ -91,7 +91,7 @@ function Profile() {
           <div className="text-center col-12  col-md-3 col-lg-3">
             <div className="mx-5">
               <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900 container ">
-                <img src="/atom.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                <img src="/atom.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                 <h5>React.js</h5>
               </BackgroundGradient>
             </div>
@@ -141,7 +141,7 @@ function Profile() {
                       <div className="border-success">Reqres Database</div>
                       <div className="">Suspendisse sit amet neque egestas, porta neque id, fermentum nulla. Maecenas pretium eget risus sit ame</div>
                       <div>
-                        <img src="/ig.png" className="w-25 m-auto mt-2" />
+                        <img src="/ig.png" alt="" className="w-25 m-auto mt-2" />
                       </div>
                     </div>
                   </BackgroundGradient>
@@ -152,7 +152,7 @@ function Profile() {
                       <div className="border-success">Reqres Database</div>
                       <div className="">Suspendisse sit amet neque egestas, porta neque id, fermentum nulla. Maecenas pretium eget risus sit ame</div>
                       <div>
-                        <img src="/ig.png" className="w-25 m-auto mt-2" />
+                        <img src="/ig.png" alt="" className="w-25 m-auto mt-2" />
                       </div>
                     </div>
                   </BackgroundGradient>
@@ -179,25 +179,25 @@ function Profile() {
                           className="mySwiper"
                         >
                           <SwiperSlide>
-                            <img src="/X.png" />
+                            <img src="/X.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/ig.png" />
+                            <img src="/ig.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/okk.png" />
+                            <img src="/okk.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/omjoko.png" />
+                            <img src="/omjoko.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/profil.png" />
+                            <img src="/profil.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/wa.png" />
+                            <img src="/wa.png" alt="" />
                           </SwiperSlide>
                           <SwiperSlide>
-                            <img src="/yutub.png" />
+                            <img src="/yutub.png" alt="" />
                           </SwiperSlide>
                         </Swiper>
                       </div>
@@ -210,7 +210,7 @@ function Profile() {
                       <div className="border-success">Reqres Database</div>
                       <div className="">Suspendisse sit amet neque egestas, porta neque id, fermentum nulla. Maecenas pretium eget risus sit ame</div>
                       <div>
-                        <img src="/X.png" className="w-25 m-auto mt-2" />
+                        <img src="/X.png" alt="" className="w-25 m-auto mt-2" />
                       </div>
                     </div>
                   </BackgroundGradient>
@@ -228,23 +228,23 @@ function Profile() {
                 <div> Want to discuss an idea? Let's start the conversation."</div>
                 <div className="row w-100">
                   <div className="col-3 ">
-                    <a target="_blank" href="https://www.instagram.com/zioonacci">
-                      <img src="/ig.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/zioonacci">
+                      <img src="/ig.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                     </a>
                   </div>
                   <div className="col-3 ">
                     <a href="https://x.com">
-                      <img src="/x.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                      <img src="/x.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                     </a>
                   </div>
                   <div className="col-3 ">
                     <a href="https://youtube.com">
-                      <img src="/yutub.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                      <img src="/yutub.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                     </a>
                   </div>
                   <div className="col-3 ">
                     <a href="https://snapchat.com">
-                      <img src="/sc.png" className="w-75 rounded rounded-3  m-auto my-3" />
+                      <img src="/sc.png" alt="" className="w-75 rounded rounded-3  m-auto my-3" />
                     </a>
                   </div>
                 </div>
@@ -253,18 +253,18 @@ function Profile() {
             <div className="col-6">
               <div className="d-flex gap-4 w-50 ">
                 <div className="p-4">
-                  <a href="https://wa.me/62895345563425" target="_blank" style={{ textDecoration: "none" }}>
+                  <a href="https://wa.me/62895345563425" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                     <div className="p-2 text-center" style={{ backgroundColor: "#052e30", borderRadius: "10px", color: "white" }}>
-                      <img src="/wa.png" height={100} width={100} className="d-block" style={{ objectFit: "cover" }} />
+                      <img src="/wa.png" alt="" height={100} width={100} className="d-block" style={{ objectFit: "cover" }} />
                       <div className="text-center">Whatsapp</div>
                     </div>
                   </a>
                 </div>
 
                 <div className="p-4">
-                  <a href="https://wa.me/62895345563425" target="_blank" style={{ textDecoration: "none" }}>
+                  <a href="https://wa.me/62895345563425" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                     <div className="p-2 text-center" style={{ backgroundColor: "#052e30", borderRadius: "10px", color: "white" }}>
-                      <img src="/gmail.png" height={100} width={100} className="d-block" style={{ objectFit: "cover" }} />
+                      <img src="/gmail.png" alt="" height={100} width={100} className="d-block" style={{ objectFit: "cover" }} />
                       <div className="text-center">Gmail</div>
                     </div>
                   </a>

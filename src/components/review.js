@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbarpage from "./navbar";
 
 const Review = () => {
@@ -138,6 +138,7 @@ const Review = () => {
     fetch("https://jsonplaceholder.typicode.com/users/1")
       .then((res) => res.json())
       .then((data) => setUser(data));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     fetch("https://api.ipify.org?format=json")
@@ -150,7 +151,7 @@ const Review = () => {
       <Navbarpage />
       <div className="row">
         <div className="border border-3 border-danger col-12">
-          <img src="https://www.shutterstock.com/image-vector/application-programming-interface-api-different-600nw-2670637915.jpg" className="w-100" />
+          <img src="https://www.shutterstock.com/image-vector/application-programming-interface-api-different-600nw-2670637915.jpg" alt="api" className="w-100" />
         </div>
       </div>
       <div className="row">
@@ -183,7 +184,7 @@ const Review = () => {
             {agename && (<button className="btn btn-primary" onClick={getAge}>
               Get Age
             </button>)}
-            
+
             {responseAge && (
               <div>
                 <p>Age: {responseAge.age}</p>
@@ -204,12 +205,12 @@ const Review = () => {
               <div>
                 {responseNationality?.country?.map((data, index) => (
                   <p key={index}>
-                    <img src={`https://flagsapi.com/${data.country_id}/shiny/64.png`} />
+                    <img src={`https://flagsapi.com/${data.country_id}/shiny/64.png`} alt="flag" />
                     Country: {data.country_id}, Probability: {data.probability} - {index}
                   </p>
                 ))}
               </div>
-            ):(
+            ) : (
               <p>skeleton</p>)}
           </div>
           <div className="col-8 border border-3 border-success">
@@ -226,14 +227,14 @@ const Review = () => {
                     <br />
                     Web Page:
                     {university?.web_pages ? (
-                      <a href={university.web_pages[0]} target="_blank">
+                      <a href={university.web_pages[0]} target="_blank" rel="noopener noreferrer">
                         Visit Website
                       </a>
                     ) : (
                       "gada web nya jir"
                     )}
                     <br />
-                    Country: <img src={`https://flagsapi.com/${university.alpha_two_code}/shiny/64.png`} />
+                    Country: <img src={`https://flagsapi.com/${university.alpha_two_code}/shiny/64.png`} alt="flag" />
                   </p>
                 ))}
               </div>
@@ -281,8 +282,8 @@ const Review = () => {
           <div style={{ border: "2px solid green", padding: "20px", margin: "10px" }}>
             <h2>16. Nama Karakter (Bug: Rendering Object)</h2>
             <button onClick={loadChar}>Load Character</button>
-            {char && ( <p>Nama: {char?.created}</p>)}
-           
+            {char && (<p>Nama: {char?.created}</p>)}
+
           </div>
 
           <div style={{ border: "2px solid blue", padding: "20px", margin: "10px" }}>
@@ -315,13 +316,13 @@ const Review = () => {
           </div>
           <div>
             <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-            {(inputValue || char ) ? <p>output realtime: {inputValue}</p>: <div>else</div>}
+            {(inputValue || char) ? <p>output realtime: {inputValue}</p> : <div>else</div>}
           </div>
           <div>asd</div>
           <div>asd</div>
           <div>asd</div>
           <div>asd</div>
-            <div style={{ border: "2px solid green", padding: "20px", margin: "10px" }}>
+          <div style={{ border: "2px solid green", padding: "20px", margin: "10px" }}>
             <h2>Brand</h2>
             <input type="text" value={InputBrand} onChange={(e) => setInputBrand(e.target.value)} />
             <button onClick={() => setBrand([...brand, InputBrand])}>Add Brand</button>
