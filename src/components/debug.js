@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { generateUUID } from "three/src/math/MathUtils";
 import { v4 as uuidv4 } from "uuid";
 const Debug = () => {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [likes, setLikes] = useState(1);
   const [keyword, setKeyword] = useState("");
@@ -16,8 +14,8 @@ const Debug = () => {
   const [jenis, setJenis] = useState("-");
   const [warna, setWarna] = useState("");
   const [aksi, setAksi] = useState("-");
-  const [price, setPrice] = useState(100000);
-  const [disc, setDisc] = useState(0.1);
+  const [price] = useState(100000);
+  const [disc] = useState(0.1);
   const [final, setFinal] = useState(0);
   const [p1, setP1] = useState("");
   const [p2, setP2] = useState("");
@@ -29,12 +27,10 @@ const Debug = () => {
   const [pemenang, setPemenang] = useState();
   const [count, setCount] = useState(0);
   const max = 5;
-  const [newstatus, setNewStatus] = useState("Data Aman");
   const hewan = ["Kucing", "Anjing", "Burung"];
   const [index, setIndex] = useState(0);
   const [minHarga, setMinHarga] = useState(0);
   const [maxHarga, setMaxHarga] = useState(0);
-  const [statusharga, setStatusHarga] = useState("");
   const [pesan, setPesan] = useState("");
   const [terkirim, setTerkirim] = useState(false);
   const [nama, setNama] = useState("Budi");
@@ -47,7 +43,6 @@ const Debug = () => {
   ]);
   const [inputNama, setInputNama] = useState("");
   const [catatan, setCatatan] = useState(["Beli telur"]);
-  const [teksNew, setTeksNew] = useState("");
   const [hobi, setHobi] = useState(["Membaca", "Berenang"]);
   const [inputHobi, setInputHobi] = useState("");
 
@@ -265,11 +260,11 @@ const Debug = () => {
     }
   };
   const tambahGame = async () => {
-  const newGame = {
+    const newGame = {
       id: 1,
       game: inputGame,
     };
-   setGame([...game, newGame]);
+    setGame([...game, newGame]);
     console.log(game);
     setInputGame("");
   }
@@ -278,7 +273,7 @@ const Debug = () => {
     <>
       <div style={{ border: "2px solid maroon", padding: "20px", margin: "10px" }}>
         <h2>37. Hapus User (Bug: Name vs ID)</h2>
-        <input placeholder="Masukkan Nama User (cth: Leanne)" onChange={(e) => setName(e.target.value)} />
+        <input placeholder="Masukkan Nama User (cth: Leanne)" />
         <button onClick={handleDelete}>Hapus</button>
         <p>Tips: Coba masukkan angka 1, pasti berhasil.</p>
       </div>
@@ -505,13 +500,13 @@ const Debug = () => {
         <button onClick={tambahMerek}>Tambah</button>
       </div>
       <div>nn
-        <input type="text" value={inputGame} onChange={(e) => setInputGame(e.target.value)}/>
-        {game.map ((m, index) => (
+        <input type="text" value={inputGame} onChange={(e) => setInputGame(e.target.value)} />
+        {game.map((m, index) => (
           <div>{index + 1} - {m.game}</div>
         ))}
         <button onClick={tambahGame}>Tambah</button>
       </div>
-      
+
     </>
   );
 };
